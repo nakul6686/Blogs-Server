@@ -1,0 +1,106 @@
+POST  http://localhost:3000/auth/user/login
+Content-Type: application/json
+
+{
+<<<<<<< HEAD
+  "userEmail": "css.nakul@gmail.com",
+  "userPassword": "Nakul@123"
+=======
+  "userEmail": "someone@gmail.com",
+  "userPassword": "********"
+>>>>>>> dev
+}
+
+###
+PUT  http://localhost:3000/auth/user/update
+Content-Type: application/json
+
+{
+  "id": "65d1ad6cf2088b96bd7b0a32", 
+  "currentUserId": "65d1ad6cf2088b96bd7b0a32",
+  "userEmail":"namestey@gmail.com",
+  "userName": "99 bnmAcraes"
+}
+
+
+### Register User 
+POST http://localhost:3000/auth/user/register
+Content-Type: application/json
+
+{
+<<<<<<< HEAD
+ "userEmail": "css.nakul@gmail.com",
+  "userPassword": "Nakul@123",
+  "userName": "Nakul Rathore",
+  "userNumber": "8899637434",
+  "userImage": "https://firebasestorage.googleapis.com/v0/b/blogs-790f3.appspot.com/o/Users%2Fnakul.png?alt=media&token=f28b8044-bc9d-4487-b943-27fd2a7797bb"
+=======
+ "userEmail": "someone@gmail.com",
+  "userPassword": "**********",
+  "userName": "Nakul Rathore",
+  "userNumber": "8899637434",
+  "userImage": ""
+>>>>>>> dev
+}
+
+### 
+POST  http://localhost:3000/blog/create 
+Content-Type: application/json
+
+{
+  "title": "Sports Event is here",
+  "desc": "To handle time series data in Mongoose, you can design your schema to include a timestamp field along with the data you want to store. Here's an example of how you might set up a time series schema using Mongoose:",
+  "user": "65d3370aacac271f3182bd98",
+  "image": "https://firebasestorage.googleapis.com/v0/b/blogs-790f3.appspot.com/o/Users%2Fnakul.png?alt=media&token=f28b8044-bc9d-4487-b943-27fd2a7797bb",
+  "category": "Sports"
+
+}
+
+
+
+
+### 
+GET  http://localhost:3000/blog/getbyId/65d33730acac271f3182bd9b 
+Content-Type: application/json
+
+### 
+DELETE http://localhost:3000/blog/delete/65d3370aacac271f3182bd98/65d77f3fe48a60af03d43c7a
+Content-Type: application/json
+
+{
+ "user": "65ce5160b7264bf9b60c4f77",
+"id": "65d0ecbc7537880aa8b972fe"
+  
+}
+
+### 
+PUT http://localhost:3000/blog/update
+Content-Type: application/json
+
+{
+  "title": "updated Title is here yay...",
+ "user": "65d3370aacac271f3182bd98",
+"id": "65dc8f81b2edc66d91d93880"
+  
+}
+
+
+### 
+GET  http://localhost:3000/blog?page=1&limit=120&category=Educative&userId=65d3370aacac271f3182bd98
+Content-Type: application/json
+
+###
+POST http://localhost:3000/comments/create
+Content-Type: application/json
+
+{
+"text":"Blog is gonna here ",
+"user": "65d33730acac271f3182bd9b",
+"blog": "65d3370aacac271f3182bd98"
+}
+
+
+### get  Home data
+GET  http://localhost:3000/application/appData
+Content-Type: application/json
+
