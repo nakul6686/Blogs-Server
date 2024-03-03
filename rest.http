@@ -2,13 +2,8 @@ POST  http://localhost:3000/auth/user/login
 Content-Type: application/json
 
 {
-<<<<<<< HEAD
-  "userEmail": "css.nakul@gmail.com",
-  "userPassword": "Nakul@123"
-=======
   "userEmail": "someone@gmail.com",
   "userPassword": "********"
->>>>>>> dev
 }
 
 ###
@@ -28,19 +23,11 @@ POST http://localhost:3000/auth/user/register
 Content-Type: application/json
 
 {
-<<<<<<< HEAD
- "userEmail": "css.nakul@gmail.com",
-  "userPassword": "Nakul@123",
-  "userName": "Nakul Rathore",
-  "userNumber": "8899637434",
-  "userImage": "https://firebasestorage.googleapis.com/v0/b/blogs-790f3.appspot.com/o/Users%2Fnakul.png?alt=media&token=f28b8044-bc9d-4487-b943-27fd2a7797bb"
-=======
  "userEmail": "someone@gmail.com",
   "userPassword": "**********",
   "userName": "Nakul Rathore",
   "userNumber": "8899637434",
   "userImage": ""
->>>>>>> dev
 }
 
 ### 
