@@ -27,7 +27,7 @@ Content-Type: application/json
   "userPassword": "**********",
   "userName": "Nakul Rathore",
   "userNumber": "8899637434",
-  "userImage": ""
+  "userImage": null
 }
 
 ### 

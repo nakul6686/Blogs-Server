@@ -33,7 +33,11 @@ const RegisterSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    userImage: imageSchema,
+    userImage: {
+      type: imageSchema,
+      required: false, 
+      default: null
+    },
   },
   { timestamps: true }
 );
