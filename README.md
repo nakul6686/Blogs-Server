@@ -50,9 +50,14 @@ To get started with this project, follow these steps:
 3. Set up your MongoDB database in MongoDB Atlas.
 4. Create a `.env` file in the root folder.
 5. Add the following variables to the `.env` file:
-   ```code
+   <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
+   <pre>
    DB_URL_STRING=YourMongoDBConnectionStringHere
    PORT=YourDesiredPort
+   </pre>
+   </div>
+6. Start the server by running `npm start`.
+7. Access the API endpoints using a tool like Postman or integrate them into your frontend application.
 
 ## Contribution
 
