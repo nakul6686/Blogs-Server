@@ -42,6 +42,8 @@ const RegisterSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+
+
 RegisterSchema.pre("save", async function (next) {
   try {
     const salt = 10;
