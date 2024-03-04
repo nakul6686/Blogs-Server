@@ -50,8 +50,8 @@ To get started with this project, follow these steps:
 3. Set up your MongoDB database in MongoDB Atlas.
 4. Create a `.env` file in the root folder.
 5. Add the following variables to the `.env` file:
-   <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
-   <pre>
+   <div>
+   <pre style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
    DB_URL_STRING=YourMongoDBConnectionStringHere
    PORT=YourDesiredPort
    </pre>
