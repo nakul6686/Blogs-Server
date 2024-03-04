@@ -37,7 +37,7 @@ The purpose of this project is to create a RESTful API for a blog application. I
   - `/blog/getbyId/:id`: GET endpoint to get specific blog by id.
   - `/blog/delete/:user/:id`: DELETE endpoint to delete the blog based on userid and id og specific blog.
   - `blog/update`: PUT endpont to update the blog.
-  - `blog?page=1&limit=120&category=Educative&userId=65d3370aacac271f3182bd98`: GET endpoint the to get all blogs,to filter and paginate.
+  - `blog?page=1&limit=120&category=Educative&userId=YourId`: GET endpoint the to get all blogs,to filter and paginate.
 - Comments API 
   - `comments/create`: POST endpoint to create
 - Get HomeData (to get data of all categories "Banner", "Travel", "News", "Sports", "Educative")
