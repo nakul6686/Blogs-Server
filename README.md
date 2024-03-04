@@ -37,12 +37,11 @@ The purpose of this project is to create a RESTful API for a blog application. I
   - `/blog/getbyId/:id`: GET endpoint to get specific blog by id.
   - `/blog/delete/:user/:id`: DELETE endpoint to delete the blog based on userid and id og specific blog.
   - `blog/update`: PUT endpont to update the blog.
-  - `blog?page=1&limit=120&category=Educative&userId=YourId`: GET endpoint the to get all blogs,to filter and paginate.
-- Comments API 
+  - `blog?page=1&limit=120&category=Educative&userId=65d3370aacac271f3182bd98`: GET endpoint the to get all blogs,to filter and paginate.
+- Comments API
   - `comments/create`: POST endpoint to create
 - Get HomeData (to get data of all categories "Banner", "Travel", "News", "Sports", "Educative")
   - `application/appData`: Get Endpoint to get home data.
-
 
 ## Getting Started
 
@@ -54,13 +53,48 @@ To get started with this project, follow these steps:
 4. Create a `.env` file in the root folder.
 5. Add the following variables to the `.env` file:
    <div>
-   <pre style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
+   <pre >
    DB_URL_STRING=YourMongoDBConnectionStringHere
    PORT=YourDesiredPort
    </pre>
    </div>
 6. Start the server by running `npm start`.
 7. Access the API endpoints using a tool like Postman or integrate them into your frontend application.
+
+#### Lets explore all endpoints with usage
+
+Make sure you are sending the `Content-Type: application/json ` along with all requests.
+
+- `/auth/user/register`: Lets Register User
+  Request Type (Without image)
+  <pre>
+    <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
+    {
+      "userEmail": "someone@gmail.com", // required
+      "userPassword": "**********", // required
+      "userName": "Nakul Rathore", // required
+      "userNumber": "8899637434", // required
+    }
+    </div>
+  </pre>
+
+Request Type (With image)
+  <pre>
+    <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
+    {
+      "userEmail": "someone@gmail.com", // required
+      "userPassword": "**********", // required
+      "userName": "Nakul Rathore", // required
+      "userNumber": "8899637434", // required
+      "userImage": {
+        "name": "something.jpg",
+        "type": "JPEG/jpg",
+        "size": "0.1kb",
+        "url": "yourstruly.com"
+      }
+    }
+    </div>
+  </pre>
 
 ## Contribution
 
