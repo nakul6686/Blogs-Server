@@ -29,17 +29,20 @@ The purpose of this project is to create a RESTful API for a blog application. I
 
 ## API Endpoints
 
-- `/api/register`: POST endpoint to register a new user.
-- `/api/login`: POST endpoint to log in an existing user.
-- `/api/users/:userId`: PUT endpoint to update user profile.
-- `/api/blogs`: 
-  - POST endpoint to add a new blog.
-  - GET endpoint to retrieve all blogs.
-- `/api/blogs/:blogId`: 
-  - PUT endpoint to update a blog.
-  - DELETE endpoint to delete a blog.
-- `/api/blogs/:blogId/comments`: 
-  - POST endpoint to add a comment to a blog.
+- `/auth/user/register`: POST endpoint to register a new user.
+- `/auth/user/login`: POST endpoint to log in an existing user.
+- `/auth/user/update`: POST endpoint to update user profile.
+- API for Blogs
+  - `/blog/create`: Post endpoint to create new blog.
+  - `/blog/getbyId/:id`: GET endpoint to get specific blog by id.
+  - `/blog/delete/:user/:id`: DELETE endpoint to delete the blog based on userid and id og specific blog.
+  - `blog/update`: PUT endpont to update the blog.
+  - `blog?page=1&limit=120&category=Educative&userId=65d3370aacac271f3182bd98`: GET endpoint the to get all blogs,to filter and paginate.
+- Comments API 
+  - `comments/create`: POST endpoint to create
+- Get HomeData (to get data of all categories "Banner", "Travel", "News", "Sports", "Educative")
+  - `application/appData`: Get Endpoint to get home data.
+
 
 ## Getting Started
 
