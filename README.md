@@ -66,35 +66,35 @@ To get started with this project, follow these steps:
 Make sure you are sending the `Content-Type: application/json ` along with all requests.
 
 - `/auth/user/register`: Lets Register User
-  Request Type (Without image)
-  <pre>
-    <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
-    {
-      "userEmail": "someone@gmail.com", // required
-      "userPassword": "**********", // required
-      "userName": "Nakul Rathore", // required
-      "userNumber": "8899637434", // required
-    }
-    </div>
-  </pre>
-
-Request Type (With image)
-  <pre>
-    <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
-    {
-      "userEmail": "someone@gmail.com", // required
-      "userPassword": "**********", // required
-      "userName": "Nakul Rathore", // required
-      "userNumber": "8899637434", // required
-      "userImage": {
-        "name": "something.jpg",
-        "type": "JPEG/jpg",
-        "size": "0.1kb",
-        "url": "yourstruly.com"
+  - Request Type (Without image)
+    <pre>
+      <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
+      {
+        "userEmail": "someone@gmail.com", // required
+        "userPassword": "**********", // required
+        "userName": "Nakul Rathore", // required
+        "userNumber": "8899637434", // required
       }
-    }
-    </div>
-  </pre>
+      </div>
+    </pre>
+
+  -Request Type (With image)
+    <pre>
+      <div style="background-color: #000000; color: #ffffff; padding: 10px; border-radius: 5px;">
+      {
+        "userEmail": "someone@gmail.com", // required
+        "userPassword": "**********", // required
+        "userName": "Nakul Rathore", // required
+        "userNumber": "8899637434", // required
+        "userImage": {
+          "name": "something.jpg",
+          "type": "JPEG/jpg",
+          "size": "0.1kb",
+          "url": "yourstruly.com"
+        }
+      }
+      </div>
+    </pre>
 
 ## Contribution
 
