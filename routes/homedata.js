@@ -8,7 +8,7 @@ router.get("/appData", async (req, res, next) => {
       // Match blogs with specified categories
       {
         $match: {
-          category: { $in: ['Banner', 'Features', 'Travel','News', 'Educative'] }
+          category: { $in: ['Banner', 'Travel', 'Travel','News', 'Educative'] }
         }
       },
       // Lookup comments count for each blog
@@ -20,15 +20,6 @@ router.get("/appData", async (req, res, next) => {
           as: 'comments'
         }
       },
-      // // Project only the count of comments for each blog
-      // {
-      //   $project: {
-      //     _id: 1,
-      //     category: 1,
-      //     commentsCount: { $size: '$comments' }
-      //   }
-      // },
-      // Sort blogs by category and createdAt in descending order
       {
         $sort: {
           category: 1,

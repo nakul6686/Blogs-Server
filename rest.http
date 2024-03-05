@@ -27,7 +27,7 @@ Content-Type: application/json
   "userPassword": "**********",
   "userName": "Nakul Rathore",
   "userNumber": "8899637434",
-  "userImage": null
+  "userImage": null 
 }
 
 ### 
@@ -40,7 +40,6 @@ Content-Type: application/json
   "user": "65d3370aacac271f3182bd98",
   "image": "https://firebasestorage.googleapis.com/v0/b/blogs-790f3.appspot.com/o/Users%2Fnakul.png?alt=media&token=f28b8044-bc9d-4487-b943-27fd2a7797bb",
   "category": "Sports"
-
 }
 
 
@@ -73,7 +72,7 @@ Content-Type: application/json
 
 
 ### 
-GET  http://localhost:3000/blog?page=1&limit=120&category=Educative&userId=65d3370aacac271f3182bd98
+GET  http://localhost:3000/blog?page=1&limit=120&category=Educative&user=65d3370aacac271f3182bd98
 Content-Type: application/json
 
 ###
