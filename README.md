@@ -53,7 +53,7 @@ This RESTful API is designed for a blog application, enabling functionalities su
 ### Setup Instructions
 
 1. **Clone the Repository**
-   - Clone this repo to your local machine using `git clone repo_url`.
+   - Clone this repo to your local machine using `git clone [repo_url](https://github.com/nakul6686/Blogs-Server.git)](https://github.com/nakul6686/Blogs-Server.git)`.
    
 2. **Install Dependencies**
    - Navigate to the cloned repository folder and run `npm install` to install the required dependencies.
