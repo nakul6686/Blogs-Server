@@ -31,7 +31,7 @@ This RESTful API is designed for a blog application, enabling functionalities su
 - **User Authentication**:
   - `/auth/user/register` - POST: Register a new user.
   - `/auth/user/login` - POST: Log in an existing user.
-  - `/auth/user/update` - POST: Update a user's profile.
+  - `/auth/user/update` - PUT: Update a user's profile.
 - **Blogs**:
   - `/blog/create` - POST: Create a new blog.
   - `/blog/getById/:id` - GET: Retrieve a blog by ID.
