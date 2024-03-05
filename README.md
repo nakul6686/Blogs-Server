@@ -69,7 +69,7 @@ This RESTful API is designed for a blog application, enabling functionalities su
      ```
    
 5. **Start the Server**
-   - Execute `npm run dev` to run the server. The console should display a message indicating that the server is running and connected to MongoDB.
+   - Execute `npm start` to run the server. The console should display a message indicating that the server is running and connected to MongoDB.
 
 6. **Testing API Endpoints**
    - Use Postman or any other API testing tool to interact with the API endpoints. Ensure you set `Content-Type: application/json` in the headers for requests that require a body payload.
