@@ -35,7 +35,7 @@ This RESTful API is designed for a blog application, enabling functionalities su
 - **Blogs**:
   - `/blog/create` - POST: Create a new blog.
   - `/blog/getById/:id` - GET: Retrieve a blog by ID.
-  - `/blog/delete/:userId/:id` - DELETE: Delete a blog by user and blog ID.
+  - `/blog/delete/:user/:id` - DELETE: Delete a blog by user and blog ID.
   - `/blog/update` - PUT: Update a blog.
   - `/blog` - GET: Fetch blogs with filtering and pagination options.
 - **Comments**:
@@ -163,7 +163,7 @@ Ensure you are sending the `Content-Type: application/json` header with all requ
   - Description: Retrieve a specific blog by its ID. Replace `:id` with the actual blog ID in the URL.
 
 - **Delete Blog**
-  - Endpoint: `/blog/delete/:userId/:id`
+  - Endpoint: `/blog/delete/:user/:id`
   - Method: DELETE
   - Description: Delete a blog based on the blog ID and the user ID who owns the blog. Replace `:userId` and `:id` with the actual user ID and blog ID.
 
@@ -184,6 +184,7 @@ Ensure you are sending the `Content-Type: application/json` header with all requ
   - Endpoint: `/blog?page=1&limit=120&category=Educative&user=65d3370aacac271f3182bd98`
   - Method: GET
   - Description: Fetch blogs with pagination and filtering options.
+  - **NOTE** : You can add one more param `searchText` to filter based on blog title. e.g(searchText=above)
 
 ### Comment Management
 
